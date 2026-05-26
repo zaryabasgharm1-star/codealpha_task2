@@ -1,56 +1,6 @@
 # CodeAlpha ML Internship Projects
 
-Repository: `CodeAlpha_MachineLearning`
-
----
-
-## Task 1 — Handwritten Character Recognition
-
-**Objective:** Identify handwritten digits (0–9) and optionally letters (a–z) using CNNs.
-
-### How to Run
-```bash
-pip install -r requirements.txt
-python task1_handwritten_recognition.py
-```
-
-### Architecture — CNN
-```
-Input (28×28×1)
-    ↓
-Conv2D(32) → BN → Conv2D(32) → BN → MaxPool → Dropout(0.25)
-    ↓
-Conv2D(64) → BN → Conv2D(64) → BN → MaxPool → Dropout(0.25)
-    ↓
-Flatten → Dense(256) → BN → Dropout(0.5)
-    ↓
-Dense(10, softmax)     ← 10 digits / 26 letters
-```
-
-### Key Techniques
-| Technique | Why |
-|---|---|
-| Batch Normalization | Stabilizes training, faster convergence |
-| Dropout (0.25 / 0.5) | Prevents overfitting |
-| Data Augmentation | Simulates real-world handwriting variation |
-| EarlyStopping + ReduceLR | Avoids over-training |
-
-### Expected Results
-| Dataset | Accuracy |
-|---|---|
-| MNIST (digits) | ~99.3% |
-| EMNIST (letters) | ~90–93% |
-
-### Output Files
-- `whatsapp images are all the outputs` 
-
-### Switch to EMNIST Letters
-```python
-# In task1_handwritten_recognition.py, line ~35:
-USE_EMNIST = True   # Change False → True
-```
-
----
+Repository: `CodeAlpha_task2`
 
 ## Task 2 — Disease Prediction from Medical Data
 
