@@ -42,11 +42,7 @@ Dense(10, softmax)     ← 10 digits / 26 letters
 | EMNIST (letters) | ~90–93% |
 
 ### Output Files
-- `task1_sample_images.png` — Random training samples
-- `task1_training_history.png` — Accuracy & Loss curves
-- `task1_confusion_matrix.png` — Per-class performance
-- `task1_predictions.png` — Correct (green) vs Wrong (red) predictions
-- `handwriting_cnn_model.keras` — Saved trained model
+- `whatsapp images are all the outputs` 
 
 ### Switch to EMNIST Letters
 ```python
